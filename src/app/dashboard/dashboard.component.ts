@@ -23,11 +23,13 @@ export class DashboardComponent implements OnInit {
       map(res => {
         var ret = res;
         ret.sort((a,b) => a.cost > b.cost ? -1 : 1);
+
+        // debug results
         console.log(ret)
           return ret;
       }) 
     )
-    .subscribe(heroes => this.heroes = heroes);
+    .subscribe(heroes => this.heroes = heroes.splice(0,4));
   }
 
 }
