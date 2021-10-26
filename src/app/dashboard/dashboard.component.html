@@ -3,6 +3,8 @@
   <a *ngFor="let hero of heroes"
       routerLink="/detail/{{hero.id}}">
       {{hero.name}}
+      <p>Cost: ${{hero.cost}}</p> 
+      <p>Cost Per sq ft: ${{hero.cost/hero.area}}</p>
   </a>
 </div>
 
