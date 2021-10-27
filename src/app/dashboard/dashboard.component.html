@@ -1,8 +1,8 @@
-<h2>Top Heroes</h2>
+<h2>Top Projects</h2>
 <div class="heroes-menu">
   <a *ngFor="let hero of heroes"
       routerLink="/detail/{{hero.id}}">
-      {{hero.name}}
+      <h3>{{hero.name}}</h3>
       <p>Cost: ${{hero.cost}}</p> 
       <p>Cost Per sq ft: ${{hero.cost/hero.area}}</p>
   </a>
