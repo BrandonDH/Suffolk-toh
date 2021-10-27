@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
 /* Global Styles */
 * {
   font-family: Arial, Helvetica, sans-serif; }
@@ -26,7 +26,8 @@ h5,
 h6,
 .h6 {
   color: #dae7ea;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  font-weight: bold; }
 
 body {
   color: #dae7ea;

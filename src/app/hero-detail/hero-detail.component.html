@@ -1,8 +1,9 @@
 <div *ngIf="hero">
-  <h2>{{hero.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{hero.id}}</div>
-  <div>
-    <label for="hero-name">Project name: </label>
+  <h1 class="mb-5">Details</h1>
+  <h5>ID: {{hero.id}}</h5>
+  <h2>{{hero.name | uppercase}}</h2>
+  <div class="mb-5">
+    <label class="d-block" for="hero-name">Update Project Name: </label>
     <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name"/>
   </div>
   <button (click)="goBack()">go back</button>

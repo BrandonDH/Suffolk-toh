@@ -7,14 +7,18 @@ nav a {
   text-decoration: none;
   margin-top: 10px;
   display: inline-block;
-  background-color: #e8e8e8;
-  color: #3d3d3d;
-  border-radius: 4px;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
 }
 nav a:hover {
-  color: white;
-  background-color: #42545C;
+  color: #b2d2e3;
+  font-weight: 700;
 }
 nav a.active {
-  background-color: black;
+  color: #b2d2e3;
+}
+
+.main-logo {
+  width: 5rem;
 }

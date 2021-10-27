@@ -1,11 +1,25 @@
-<h2>Top Projects</h2>
-<div class="heroes-menu">
-  <a *ngFor="let hero of heroes"
-      routerLink="/detail/{{hero.id}}">
-      <h3>{{hero.name}}</h3>
-      <p>Cost: ${{hero.cost}}</p> 
-      <p>Cost Per sq ft: ${{hero.cost/hero.area}}</p>
-  </a>
+<div class="row mb-5">
+  <div class="col-md-6 offset-md-3">
+    <h2>Top Projects</h2>
+  </div>
 </div>
 
-<app-hero-search></app-hero-search>
+<div class="row mb-5">
+  <div class="col-md-6 col-lg-3 mb-4" *ngFor="let hero of heroes"
+      routerLink="/detail/{{hero.id}}">
+      <div class="project-img d-flex align-items-center"></div>
+      <a class="project-link d-block">
+        <h5>{{hero.name}}</h5>
+        <p class="mb-0">Cost: ${{hero.cost}}</p> 
+        <p>Cost Per sq ft: ${{hero.cost/hero.area | number}}</p>
+      </a>
+      </div>
+  
+</div>
+
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+    <app-hero-search></app-hero-search>
+  </div>
+</div>
+
